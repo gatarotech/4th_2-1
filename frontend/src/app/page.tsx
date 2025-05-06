@@ -8,7 +8,7 @@ export default function Page() {
 
   const fetchProduct = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/product/${prdId}`)
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_API_URL}/product/${prdId}`)
       if (!res.ok) throw new Error('データが見つかりません')
       const data = await res.json()
       setResult(data)
