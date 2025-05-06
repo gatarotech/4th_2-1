@@ -27,6 +27,8 @@ jobs:
 
     - name: Build
       run: npm run build
+      env:
+        NEXT_PUBLIC_BACKEND_API_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_API_URL }}
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
