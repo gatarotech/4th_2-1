@@ -8,7 +8,7 @@ load_dotenv()
 
 app = FastAPI()
 
-# CORS設定（Next.jsと通信可能にする）
+# CORS設定 （Next.jsと通信可能にする）
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # 必要に応じて限定
