@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-// test5
+// test6
 export default function Page() {
   const [prdId, setPrdId] = useState('')
   const [result, setResult] = useState<{ NAME: string; PRICE: number } | null>(null)
