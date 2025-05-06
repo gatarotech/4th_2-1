@@ -34,4 +34,4 @@ jobs:
         app-name: 'tech0-gen8-step4-pos-app-37'
         slot-name: production
         publish-profile: ${{ secrets.AZURE_FRONTEND_PUBLISH_PROFILE }}
-        package: frontend/.next
+        package: frontend
